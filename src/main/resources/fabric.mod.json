@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "fast-xp-orbs",
+	"version": "${version}",
+	"name": "Fast XP Orbs",
+	"description": "XP orbs jump straight to their target player and are attracted at twice the distance.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/fast-xp-orbs/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"us.graymatterapps.fastxporbs.FastXPOrbs"
+		],
+		"client": [
+			"us.graymatterapps.fastxporbs.FastXPOrbsClient"
+		],
+		"fabric-datagen": [
+			"us.graymatterapps.fastxporbs.FastXPOrbsDataGenerator"
+		]
+	},
+	"mixins": [
+		"fast-xp-orbs.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
